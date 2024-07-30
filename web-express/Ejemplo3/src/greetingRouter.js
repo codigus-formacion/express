@@ -45,4 +45,8 @@ router.get('/beatles', (req, res) => {
     });
 });
 
+router.get('/partial', (req, res) => {
+    res.render('page');
+});
+
 export default router;
