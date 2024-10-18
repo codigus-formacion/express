@@ -2,10 +2,10 @@ import express from 'express';
 
 const router = express.Router();
 
-router.get('/ofertas', (req, res) => {
+router.get('/ofertas/:city', (req, res) => {
 
     res.render('offers', {
-        city: req.query.poblacion,
+        city: req.params.city,
     });
 });
 
